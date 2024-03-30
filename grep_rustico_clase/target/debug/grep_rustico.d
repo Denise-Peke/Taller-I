@@ -1,0 +1,1 @@
+/Users/denisedallacqua/Desktop/Primer\ cuatrimetre\ 2024/Taller\ de\ programación\ /Taller-I/grep_rustico/target/debug/grep_rustico: /Users/denisedallacqua/Desktop/Primer\ cuatrimetre\ 2024/Taller\ de\ programación\ /Taller-I/grep_rustico/src/main.rs
