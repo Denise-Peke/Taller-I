@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::io::{self, BufRead};
 
-// Definición de la estructura Reader
+
 pub struct Reader {
     file_name: String,
     search_string: String,
@@ -16,21 +16,18 @@ impl Reader {
         }
     }
 
-
     pub fn read_and_search(&self) -> io::Result<()> {
        
         let file = File::open(&self.file_name)?;
         let reader = io::BufReader::new(file);
 
     
-        for (line_number, line) in reader.lines().enumerate() {
+        for (_line_number, line) in reader.lines().enumerate() {
             let line = line?;
-            if let Some(pos) = self.find_substring(&line) {
-                println!("'{}' encontrado en línea {} en la posición {}:", self.search_string, line_number + 1, pos);
+            if let Some(_pos) = self.find_substring(&line) {
                 println!("{}", line);
             }
         }
-
         Ok(())
     }
 
